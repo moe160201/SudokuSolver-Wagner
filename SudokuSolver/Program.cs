@@ -19,8 +19,14 @@ namespace SudokuSolver {
 
       SudokuBoard board = new SudokuBoard(initialBoard);
 
+      Console.WriteLine("The famous Sudoku Solver!!!");
+      Console.WriteLine();
+
+      Console.Write("This Sudoku is ... ");
       bool solved = SudokuSolver.Solve(board);
       Console.WriteLine($"{(solved ? "SOLVED" : "UNSOLVABLE")}");
+      Console.WriteLine();
+      Console.WriteLine("Bye.");
     }
   }
 }
